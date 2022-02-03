@@ -1,9 +1,13 @@
 import React from 'react';
 import { StyledHeader, ReactLogo } from './styles/Header.styles';
+import { useThemeContext, useFontContext } from '../context/Context';
 
 const Header = () => {
+  const themeValue = useThemeContext();
+  const fontValue = useFontContext();
+
   return (
-    <StyledHeader headerBg="blue" headerFont="Verdana, Geneva, Tahoma, sans-serif">
+    <StyledHeader headerBg={themeValue.theme.color1} headerFont={fontValue.font.font1}>
         <ReactLogo>
             <img src="./react.png" alt="React Logo" />
         </ReactLogo>

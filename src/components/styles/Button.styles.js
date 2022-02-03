@@ -10,10 +10,10 @@ export const Row = styled.div`
 export const Button1 = styled.button`
     padding: 10px 15px;
     margin: 10px;
-    border: 1px solid #0000ff;
-    color: #0000ff;
+    border: 1px solid ${({color1}) => color1};
+    color: ${({color1}) => color1};
     font-size: 26px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: ${({font}) => font};
     outline: none;
     cursor: pointer;
 `
@@ -21,17 +21,17 @@ export const Button1 = styled.button`
 export const Button2 = styled.button`
     padding: 10px 15px;
     margin: 10px;
-    background: #0000ff;
+    background: ${({color1}) => color1};
     color: #fff;
     font-size: 26px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: ${({font}) => font};
     outline: none;
     cursor: pointer;
 `
 
 export const DropDown = styled.select`
     width: 10%;
-    padding: 15px 20px;
+    padding: 15px 5px;
     margin: 20px 10px 0 10px;
     font-size: 18px;
     outline: none;
