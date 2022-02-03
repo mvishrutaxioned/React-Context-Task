@@ -13,7 +13,7 @@ export const Button1 = styled.button`
     border: 1px solid ${({color1}) => color1};
     color: ${({color1}) => color1};
     font-size: 26px;
-    font-family: ${({font}) => font};
+    font-family: ${({textStyle}) => textStyle};
     outline: none;
     cursor: pointer;
 `
@@ -24,7 +24,7 @@ export const Button2 = styled.button`
     background: ${({color1}) => color1};
     color: #fff;
     font-size: 26px;
-    font-family: ${({font}) => font};
+    font-family: ${({textStyle}) => textStyle};
     outline: none;
     cursor: pointer;
 `

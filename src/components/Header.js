@@ -7,7 +7,7 @@ const Header = () => {
   const fontValue = useFontContext();
 
   return (
-    <StyledHeader headerBg={themeValue.theme.color1} headerFont={fontValue.font.font1}>
+    <StyledHeader headerBg={themeValue.theme.color1} headerFont={fontValue.font}>
         <ReactLogo>
             <img src="./react.png" alt="React Logo" />
         </ReactLogo>
