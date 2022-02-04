@@ -29,7 +29,7 @@ export const Button2 = styled.button`
     cursor: pointer;
 `
 
-export const DropDown = styled.select`
+export const DropDownStyle = styled.select`
     width: 10%;
     padding: 15px 5px;
     margin: 20px 10px 0 10px;
